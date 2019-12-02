@@ -1,0 +1,204 @@
+.home-content {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    select {
+      height: 40px;
+      width: 250px;
+      background: white;
+      border: none;
+      border-radius: unset;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+  }
+
+  .infos {
+    display: flex;
+    background: white;
+    padding: 20px 0;
+    border-radius: 3px;
+
+    .info-item {
+      width: 25%;
+      border-right: 2px solid #ddd;
+      padding: 0 30px;
+      font-weight: bold;
+
+      &:last-child {
+        border: none;
+      }
+
+      .icon {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $secondary;
+        margin-right: 10px;
+      }
+
+      .price {
+        margin-top: 5px;
+
+        .sm {
+          font-size: 24px;
+          margin-right: 5px;
+        }
+
+        .bg {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+
+  .percent-tag {
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: white;
+    font-weight: normal;
+    margin-left: 5px;
+
+    &.green {
+      background-color: $green;
+    }
+
+    &.red {
+      background-color: $red;
+    }
+  }
+
+  .view-all {
+    border: 2px solid #ddd;
+    font-weight: bold;
+    color: #728897;
+    text-align: center;
+    padding: 8px;
+    box-shadow: inset 0px -3px 5px 1px #e3e7ec;
+    border-left-width: 1px;
+    border-right-width: 1px;
+
+    span {
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -13px;
+        top: 4px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #728897;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .my-app-list {
+    margin-top: 40px;
+
+    .title {
+      font-size: 16px;
+      margin-bottom: 15px;
+
+      .icon-filter {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        margin-left: 35px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    .app-row {
+      display: flex;
+      background: white;
+      padding: 20px;
+      margin-bottom: 5px;
+
+      .left {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        .icon-app {
+          margin: 0 40px 0 10px;
+        }
+
+        .app-name {
+          font-size: 18px;
+        }
+
+        .price {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+      }
+
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .settings {
+          .icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $secondary;
+            margin-left: 5px;
+            cursor: pointer;
+
+            &:hover {
+              opacity: .7;
+            }
+          }
+        }
+
+        .icon-dots {
+          margin-left: 25px;
+          margin-right: 10px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rc-tooltip-inner {
+  min-height: unset !important;
+  border-radius: unset !important;
+  font-size: 13px !important;
+  background-color: rgb(9, 58, 93) !important;
+  padding: 8px 15px !important;
+}
